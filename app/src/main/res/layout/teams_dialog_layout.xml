@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <EditText
+            android:id="@+id/team1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/team1"
+            android:layout_weight="0.1"/>
+
+        <Button
+            android:id="@+id/team1color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_circle"
+            android:backgroundTint="@color/white"
+            android:layout_weight="0.9"
+            app:srcCompat="@drawable/ic_circle"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/LinearLayout1">
+
+
+        <EditText
+            android:id="@+id/team2Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/team2"
+            android:layout_weight="0.1"/>
+
+        <Button
+            android:id="@+id/team2color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_circle"
+            android:backgroundTint="@color/white"
+            android:layout_weight="0.9"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/okTeamsButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout2"
+        android:layout_centerHorizontal="true"
+        android:text="Ok" />
+
+
+</RelativeLayout>

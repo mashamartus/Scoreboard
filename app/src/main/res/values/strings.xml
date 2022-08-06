@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Scoreboard</string>
+    <string name="field">Players on the FIELD</string>
+    <string name="bench">Players on the BENCH</string>
+    <string name="gender">Gender</string>
+    <string name="score">Score</string>
+    <string name="team1">Team 1 (our)</string>
+    <string name="team2">Team 2 (opponents)</string>
+    <string name="initialScore">0 – 0</string>
+    <string name="plrsInTeam">Players in the team</string>
+    <string name="plrsOnFeild">Players on the field</string>
+    <string name="startNumber">First number on field</string>
+    <string name="timer">Time from last button press</string>
+    <string name="gameTimer">Time of the game</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="startingGender">Gender at start</string>
+    <string name="teams">Teams</string>
+    <string name="layout">Layout</string>
+
+
+
+</resources>

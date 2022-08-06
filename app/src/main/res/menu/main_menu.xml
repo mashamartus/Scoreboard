@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/restartGame"
+        android:title="Restart the game"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/teams"
+        android:title="@string/teams" />
+    <item
+        android:id="@+id/testButton"
+        android:title="testButton"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/playersInTeam"
+        android:title="@string/plrsInTeam">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                android:enabled="true">
+                <item
+                    android:id="@+id/plrsTeam3"
+                    android:title="3"/>
+                <item
+                    android:id="@+id/plrsTeam4"
+                    android:title="4"/>
+                <item
+                    android:id="@+id/plrsTeam5"
+                    android:title="5" />
+                <item
+                    android:id="@+id/plrsTeam6"
+                    android:title="6"/>
+                <item
+                    android:id="@+id/plrsTeam7"
+                    android:title="7"/>
+                <item
+                    android:id="@+id/plrsTeam8"
+                    android:title="8"
+                    android:checked="true"/>
+                <item
+                    android:id="@+id/plrsTeam9"
+                    android:title="9"/>
+                <item
+                    android:id="@+id/plrsTeam10"
+                    android:title="10"/>
+                <item
+                    android:id="@+id/plrsTeam11"
+                    android:title="11"/>
+                <item
+                    android:id="@+id/plrsTeam12"
+                    android:title="12"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/playersOnField"
+        android:checkable="false"
+        android:checked="false"
+        android:title="@string/plrsOnFeild"
+        app:showAsAction="never">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                android:enabled="true">
+                <item
+                    android:id="@+id/plrsF3"
+                    android:title="3" />
+                <item
+                    android:id="@+id/plrsF4"
+                    android:title="4" />
+                <item
+                    android:id="@+id/plrsF5"
+                    android:checked="true"
+                    android:title="5" />
+                <item
+                    android:id="@+id/plrsF6"
+                    android:title="6" />
+                <item
+                    android:id="@+id/plrsF7"
+                    android:title="7" />
+                <item
+                    android:id="@+id/plrsF8"
+                    android:title="8" />
+                <item
+                    android:id="@+id/plrsF9"
+                    android:title="9" />
+                <item
+                    android:id="@+id/plrsF10"
+                    android:title="10" />
+                <item
+                    android:id="@+id/plrsF11"
+                    android:title="11" />
+                <item
+                    android:id="@+id/plrsF12"
+                    android:title="12" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/startNumber"
+        android:title="@string/startNumber">
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                android:enabled="true">
+                <item
+                    android:id="@+id/plrsStrt1"
+                    android:checked="true"
+                    android:title="1" />
+                <item
+                    android:id="@+id/plrsStrt2"
+                    android:title="2" />
+                <item
+                    android:id="@+id/plrsStrt3"
+                    android:title="3" />
+                <item
+                    android:id="@+id/plrsStrt4"
+                    android:title="4" />
+                <item
+                    android:id="@+id/plrsStrt5"
+                    android:title="5" />
+                <item
+                    android:id="@+id/plrsStrt6"
+                    android:title="6" />
+                <item
+                    android:id="@+id/plrsStrt7"
+                    android:title="7" />
+                <item
+                    android:id="@+id/plrsStrt8"
+                    android:title="8" />
+                <item
+                    android:id="@+id/plrsStrt9"
+                    android:title="9" />
+                <item
+                    android:id="@+id/plrsStrt10"
+                    android:title="10" />
+                <item
+                    android:id="@+id/plrsStrt11"
+                    android:title="11" />
+                <item
+                    android:id="@+id/plrsStrt12"
+                    android:title="12" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/flipGender"
+        android:title="@string/startingGender" />
+
+    <item
+        android:id="@+id/layout"
+        android:title="@string/layout"   >
+    <menu>
+        <group
+            android:checkableBehavior="all"
+            android:enabled="true">
+            <item
+                android:id="@+id/layoutField"
+                android:title="@string/field"
+                android:checked="true"/>
+            <item
+                android:id="@+id/layoutBench"
+                android:title="@string/bench"
+                android:checked="true"/>
+            <item
+                android:id="@+id/layoutGender"
+                android:title="@string/gender"
+                android:checked="true"/>
+            <item
+                android:id="@+id/layoutScore"
+                android:title="@string/score"
+                android:checked="true"/>
+            <item
+                android:id="@+id/layoutTimer"
+                android:title="@string/timer"
+                android:checked="true"/>
+            <item
+                android:id="@+id/layoutGameTimer"
+                android:title="@string/gameTimer"
+                android:checked="true"/>
+        </group>
+</menu>
+</item>
+
+</menu>

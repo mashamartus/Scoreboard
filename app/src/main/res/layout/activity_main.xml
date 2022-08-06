@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/fieldPlayersText"
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/blue"
+        android:text="1 2 3 4 5"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        app:autoSizeMaxTextSize="80sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:text="@string/field"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:text="@string/bench"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_below="@+id/fieldPlayersText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/benchPlayersText"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginHorizontal="24dp"
+        android:text="6 7 8"
+        android:layout_below="@+id/fieldPlayersText"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        app:autoSizeMaxTextSize="80sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/score"
+        android:textAlignment="center"
+        android:layout_below="@+id/benchPlayersText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/initialScore"
+        android:layout_below="@+id/benchPlayersText"
+        android:textAlignment="center"
+        android:textSize="96sp" />
+
+
+    <TextView
+        android:id="@+id/dummyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreTextView"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonTeam1"
+            android:layout_width="0dp"
+            android:layout_height="128sp"
+            android:layout_weight="0.5"
+            android:text="@string/team1"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="6dp"
+            />
+
+        <Button
+            android:id="@+id/buttonTeam2"
+            android:layout_width="0dp"
+            android:layout_height="128sp"
+            android:layout_weight="0.5"
+            android:text="@string/team2"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="6dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/timer"
+        android:layout_below="@+id/buttons"/>
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/buttons"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/gameTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/gameTimer"
+        android:layout_below="@+id/chronometer"/>
+    <Chronometer
+        android:id="@+id/gameTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/chronometer"
+        android:textSize="42sp"/>
+
+
+
+    <Button
+        android:id="@+id/startStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/start" />
+
+</RelativeLayout>

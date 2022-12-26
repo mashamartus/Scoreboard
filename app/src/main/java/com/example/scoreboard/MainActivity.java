@@ -17,6 +17,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.scoreboard.GameState;
+import com.example.scoreboard.R;
 import com.larswerkman.holocolorpicker.ColorPicker;
 import com.larswerkman.holocolorpicker.OpacityBar;
 import com.larswerkman.holocolorpicker.SVBar;
@@ -122,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //initialize buttons
         buttonTeam1 = findViewById(R.id.buttonTeam1);
         buttonTeam2 = findViewById(R.id.buttonTeam2);
         scoreTextView = findViewById(R.id.scoreTextView);
